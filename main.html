@@ -1,14 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <table style="width: 100%; height: 100%">
-      <!-- Your code here -->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        table {
+            width: 100%;
+        }
+        th,
+        td {
+            width: 50%;
+            font-size: larger;
+        }
+        th {
+            font-weight: bold;
+        }
+        td {
+            text-align: center;
+        }
+        div {
+            padding: 10px 50px;
+        }
+
+        .outside1 {
+            padding-block: 5%;
+        }
+        .outside2 {
+            padding-block: 2.5%;
+        }
+
+        #outside {
+            margin: 10px;
+        }
+        #html {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table border="1" id="outside">
+        <!-- Your code here -->
+        <tbody></tbody>
+        <tr>
+            <td class="outside1">
+                <table border="1">
+                    <!-- <div></div> -->
+                    <thead>
+                        <tr>
+                            <th colspan="2">Nested Table 2</th>
+                        </tr>
+                        <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>abc</td>
+                            <td>def</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class="outside1">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Nested Table 1</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div>
+                                    <ul>
+                                        <li>List item 1</li>
+                                        <li>List item 2</li>
+                                        <li>List item 3</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="outside2">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Nested Table 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="">Nested Table</a></td>
+                            <td>Demo Continued</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class="outside2">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Nested Table 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="html">HTML</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
     </table>
-  </body>
+
+</body>
+
 </html>
